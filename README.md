@@ -74,7 +74,7 @@ UserAuthApp/
 
 ### Auth State (`AuthContext`)
 
-All auth logic lives in `AuthContext`. No Redux — just `useState` + React Context.
+All auth logic lives in `AuthContext`. `useState` + React Context.
 
 - `login(email, password)` — validates format, checks credentials against `AsyncStorage`, sets user state on success
 - `signup(name, email, password)` — validates inputs, checks for duplicate email, saves user, auto-logs in
