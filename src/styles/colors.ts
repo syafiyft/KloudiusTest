@@ -10,6 +10,6 @@ const colors = {
   borderFocused: '#4F46E5',
   placeholder: '#9CA3AF',
   disabled: '#E5E7EB',
-};
+} as const;
 
 export default colors;

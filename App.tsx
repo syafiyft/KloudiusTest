@@ -9,6 +9,8 @@ function AppInner() {
   const { initializeAuth } = useAuth();
   useEffect(() => {
     initializeAuth();
+    // initializeAuth is stable (function declaration in AuthProvider, not recreated on re-render)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return <RootNavigator />;
 }
