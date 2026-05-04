@@ -85,10 +85,10 @@ All auth logic lives in `AuthContext`. No Redux — just `useState` + React Cont
 
 Two `AsyncStorage` keys:
 
-| Key | Value |
-|-----|-------|
-| `registered_users` | `[{ name, email, password }]` — all accounts |
-| `current_session` | `{ name, email }` — active session, absent when logged out |
+| Key                | Value                                                      |
+| ------------------ | ---------------------------------------------------------- |
+| `registered_users` | `[{ name, email, password }]` — all accounts               |
+| `current_session`  | `{ name, email }` — active session, absent when logged out |
 
 ### Navigation
 
@@ -102,17 +102,15 @@ Two-stack pattern prevents back-button access after login/logout:
 
 ## Validation Rules
 
-| Field | Rule |
-|-------|------|
-| Email | Must match standard email format |
-| Password | Minimum 6 characters |
-| Name | Cannot be empty |
-| All fields | Required on submit |
+| Field      | Rule                             |
+| ---------- | -------------------------------- |
+| Email      | Must match standard email format |
+| Password   | Minimum 6 characters             |
+| Name       | Cannot be empty                  |
+| All fields | Required on submit               |
 
 ---
 
-## Screenshots
+## Video Recording
 
-| Login | Signup | Home |
-|-------|--------|------|
-| *(add screenshot)* | *(add screenshot)* | *(add screenshot)* |
+https://cap.link/vjam36axdvdvhad
